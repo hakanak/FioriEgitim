@@ -3,9 +3,9 @@
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
 
-<Text text="Merhaba" />
+<Text text="Merhaba TIRSAN PYO" />
 
    <Button
-      text="Buraya Tıklayın"
+      text="Devam etmek için tıklayın"
       press=".onShowHello"/>
 </mvc:View>
