@@ -8,4 +8,8 @@
    <Button
       text="Devam etmek için tıklayın"
       press=".onShowHello"/>
+
+      
+<Text text="Commit denemesi bla bla bla" />
+
 </mvc:View>
