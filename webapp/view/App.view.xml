@@ -3,7 +3,7 @@
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
 
-<Text text="Merhaba" />
+<Text text="Merhaba PYO" />
 
    <Button
       text="Buraya Tıklayın"
