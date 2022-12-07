@@ -10,7 +10,7 @@
 >>>>>>> 61ed1aefa3f43eecf6bbca35e3146f02c8f62271
 
    <Button
-      text="Devam etmek için tıklayınız"
+      text="Devam etmek için tıklayınız PYO_BATU"
       press=".onShowHello"/>
 
       
