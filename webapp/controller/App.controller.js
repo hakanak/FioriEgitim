@@ -6,7 +6,7 @@ sap.ui.define([
    return Controller.extend("sap.ui.demo.walkthrough.controller.App", {
       onShowHello : function () {
          // show a native JavaScript alert
-        alert("Deneme Deneme");
+       // alert("Deneme Deneme");
         MessageToast.show("This message should appear in the message toast", {
          duration: 5000,                  // default
          width: "60em",                   // default
