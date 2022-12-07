@@ -3,17 +3,18 @@
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
 
-<<<<<<< HEAD
-<Text text="Merhaba PYO" />
-=======
+
 <Text text="Merhaba TIRSAN PYO_MY" />
->>>>>>> 61ed1aefa3f43eecf6bbca35e3146f02c8f62271
 
    <Button
-      text="Devam etmek için tıklayınızzzzzzzzz PYO_BATU"
+      text="Devam etmek için tıklayınızzzzzzzzz abc g PYO_BATU "
       press=".onShowHello"/>
 
       
 <Text text="Commit denemesi bla bla bla" />
+
+
+
+<Text text="yihaaaa" />
 
 </mvc:View>
