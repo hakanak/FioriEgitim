@@ -6,7 +6,7 @@
 <Text text="Merhaba TIRSAN PYO_MY" />
 
    <Button
-      text="Devam etmek için tıklayınız"
+      text="Devam etmek için tıklayınızzzzzzzzz"
       press=".onShowHello"/>
 
       
