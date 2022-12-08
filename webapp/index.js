@@ -4,7 +4,7 @@ sap.ui.define([
 	"use strict";
 
 	XMLView.create({
-		viewName: "sap.ui.demo.walkthrough.view.App"
+		viewName: "sap.ui.demo.walkthrough.view.Table"
 	}).then(function (oView) {
 		oView.placeAt("content");
 	});

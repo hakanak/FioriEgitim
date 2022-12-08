@@ -1,0 +1,49 @@
+<mvc:View
+   controllerName="sap.ui.demo.walkthrough.controller.Table"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+	
+
+    <Table>
+    <columns>
+      <Column
+        width="12em">
+        <Text text="ID" />
+      </Column>
+
+       <Column
+        minScreenWidth="Tablet"
+        demandPopin="true">
+        <Text text="Adı" />
+      </Column>
+
+      
+      <Column
+        width="12em">
+        <Text text="Tarih" />
+      </Column>
+
+
+    </columns>
+
+
+    <items>
+      <ColumnListItem>
+        <cells>
+          <ObjectIdentifier
+            title="{ID}"
+            text="{Adi}"
+            class="sapUiTinyMarginTopBottom" />
+          <Text
+            text="{Tarih}" />
+        </cells>
+      </ColumnListItem>
+    </items>
+
+
+
+</Table>
+
+
+
+</mvc:View>

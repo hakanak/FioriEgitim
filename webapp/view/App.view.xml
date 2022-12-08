@@ -4,17 +4,31 @@
    xmlns:mvc="sap.ui.core.mvc">
 
 
-<Text text="Merhaba TIRSAN PYO_MY" />
+<Text  text="Merhaba TIRSAN PYO_MY" textAlign="Center" width="500px" press=".onRetEt"  />
 
-   <Button
-      text="Devam etmek için tıklayınızzzzzzzzz abc g PYO_BATU "
-      press=".onShowHello"/>
+<Button text="Devam etmek için tıklayınızzzzzzzzz abc g PYO_BATU " type="Critical" press=".onShowHello"/>
 
-      
+
+   
+<Button text="Ret Et " type="Reject" press=".onRetEt" />   
+
+   
 <Text text="Commit denemesi bla bla bla" />
 
 
 
-<Text text="yihaaaa" />
+<Text text="Commit denemesi bla bla bla" />
+
+	<Button
+			text="Error"
+			press=".onErrorMessageBoxPress"
+			width="280px"
+			ariaHasPopup="Dialog" />
+	
+
+
+
+   
+
 
 </mvc:View>
