@@ -16,8 +16,10 @@ sap.ui.define([
          };
 
          let oModel = new JSONModel(oData);
-
+         oModel.loadData("https://localhost:44325/api/Home/Motive2");
          this.getView().setModel(oModel);
+
+        // this.byId("txt3").setValue("BY ID ILE ATTIK");
 
       },
       onSave: function(){
@@ -37,7 +39,8 @@ sap.ui.define([
          MessageToast.show("This message should appear in the message toast");
 
       },
-      	onErrorMessageBoxPress: function () {
+      
+      onErrorMessageBoxPress: function () {
 			MessageBox.error("Select a team in the \"Development\" area.\n\"Marketing\" isn't assigned to this area.");
 		},
 

@@ -4,21 +4,17 @@
    xmlns:mvc="sap.ui.core.mvc">
 
   <Input
-      value="{/recipient/name}"
+      value="{/soz}"
       description="Hello {/recipient/name}"
       valueLiveUpdate="true"
       width="60%" id="txt1" />
 
-<Input
-      value="{/recipient/name1}"
-      description="Hello {/recipient/name1}"
-      valueLiveUpdate="true"
-      width="60%"/>
+
 
 <Button press=".onSave" text="Kaydet" type="Critical" />
 
 
-<Text  text="Merhaba TIRSAN PYO_MY" textAlign="Center" width="500px" press=".onRetEt"  />
+<Text  text="Merhaba TIRSAN PYO_MY" textAlign="Center" width="500px"  id="txt3"  />
 
 <Button text="Devam etmek için tıklayınızzzzzzzzz abc g PYO_BATU " type="Critical" press=".onShowHello"/>
 
