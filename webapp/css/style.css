@@ -11,3 +11,11 @@ html[dir="ltr"] .myAppDemoWT .myCustomButton.sapMBtn {
     display: inline-block;
     font-weight: bold;
  }
+ 
+ 
+ .myCustomTextRed {
+    display: inline-block;
+    font-weight: bold;
+    color: #ff0000;
+
+ }
