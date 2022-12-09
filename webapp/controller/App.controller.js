@@ -2,8 +2,13 @@ sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/m/MessageBox",
 	"sap/m/MessageToast",
-   "sap/ui/model/json/JSONModel"
-], function (Controller, MessageBox, MessageToast,JSONModel) {
+   "sap/ui/model/json/JSONModel",
+   "sap/ui/model/resource/ResourceModel"
+], function (Controller,
+	MessageBox,
+	MessageToast,
+	JSONModel,
+	ResourceModel) {
 	"use strict";
    return Controller.extend("sap.ui.demo.walkthrough.controller.App", {
       onInit: function(){
@@ -21,6 +26,13 @@ sap.ui.define([
 
         // this.byId("txt3").setValue("BY ID ILE ATTIK");
 
+// set i18n model on view
+var i18nModel = new ResourceModel({
+   bundleName: "sap.ui.demo.walkthrough.i18n.i18n"
+});
+this.getView().setModel(i18nModel, "i18n");
+
+
       },
       onSave: function(){
 
@@ -35,6 +47,8 @@ sap.ui.define([
       },
 
       onShowHello : function () {   
+
+        
 
          MessageToast.show("This message should appear in the message toast");
 

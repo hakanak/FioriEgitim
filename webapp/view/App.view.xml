@@ -11,7 +11,9 @@
 
 
 
-<Button press=".onSave" text="Kaydet" type="Critical" />
+
+
+<Button press=".onSave"  type="Critical" text="{i18n>showHelloButtonText}" />
 
 
 <Text  text="Merhaba TIRSAN PYO_MY" textAlign="Center" width="500px"  id="txt3"  />
