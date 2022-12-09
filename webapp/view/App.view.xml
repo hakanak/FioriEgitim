@@ -5,15 +5,28 @@
 
   <Input
       value="{/soz}"
+      valueLiveUpdate="true"
+      width="90%"  />
+
+<Button press=".onSave"  type="Success" text="Güncelle" />
+
+   <Button
+      text="{i18n>showHelloButtonText}"
+      press=".onShowHello"/>
+   <Input
+      value="{/recipient/name}"
       description="Hello {/recipient/name}"
       valueLiveUpdate="true"
-      width="60%" id="txt1" />
+      width="60%"/>
 
 
 
 
 
-<Button press=".onSave"  type="Critical" text="{i18n>showHelloButtonText}" />
+
+
+
+
 
 
 <Text  text="Merhaba TIRSAN PYO_MY" textAlign="Center" width="500px"  id="txt3"  />

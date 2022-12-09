@@ -26,11 +26,11 @@ sap.ui.define([
 
         // this.byId("txt3").setValue("BY ID ILE ATTIK");
 
-// set i18n model on view
-var i18nModel = new ResourceModel({
-   bundleName: "sap.ui.demo.walkthrough.i18n.i18n"
-});
-this.getView().setModel(i18nModel, "i18n");
+         // set i18n model on view
+         var i18nModel = new ResourceModel({
+            bundleName: "sap.ui.demo.walkthrough.i18n.i18n"
+         });
+         this.getView().setModel(i18nModel, "i18n");
 
 
       },
@@ -45,13 +45,13 @@ this.getView().setModel(i18nModel, "i18n");
 
 
       },
-
-      onShowHello : function () {   
-
-        
-
-         MessageToast.show("This message should appear in the message toast");
-
+      onShowHello : function () {
+         // read msg from i18n model
+         var oBundle = this.getView().getModel("i18n").getResourceBundle();
+         var sRecipient = this.getView().getModel().getProperty("/soz");
+         var sMsg = oBundle.getText("helloMsg", [sRecipient]);
+         // show message
+         MessageToast.show(sMsg);
       },
       
       onErrorMessageBoxPress: function () {
