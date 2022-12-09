@@ -1,11 +1,37 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/m/MessageBox",
-	"sap/m/MessageToast"
-], function (Controller, MessageBox, MessageToast) {
+	"sap/m/MessageToast",
+   "sap/ui/model/json/JSONModel"
+], function (Controller, MessageBox, MessageToast,JSONModel) {
 	"use strict";
    return Controller.extend("sap.ui.demo.walkthrough.controller.App", {
-      
+      onInit: function(){
+
+         let oData = {
+            recipient:{
+               name:"DENEME BLA BLA",
+               name1:"HELLO BLA BLA"
+            }
+         };
+
+         let oModel = new JSONModel(oData);
+
+         this.getView().setModel(oModel);
+
+      },
+      onSave: function(){
+
+         var oModel = this.getView().getModel();
+
+         oModel.getData().recipient.name = "123456";
+         oModel.refresh();
+
+         MessageToast.show("Kaydedildi");
+
+
+      },
+
       onShowHello : function () {   
 
          MessageToast.show("This message should appear in the message toast");
