@@ -10,6 +10,13 @@
 
 <Button text="Deneme" />
 
+ <beginButton>
+         <Button
+            text="{i18n>dialogCloseButtonText}"
+            press=".onCloseDialog"/>
+      </beginButton>
 
+
+      
    </Dialog>
 </core:FragmentDefinition>

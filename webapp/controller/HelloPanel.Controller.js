@@ -24,6 +24,14 @@ sap.ui.define([
            this.pDialog.then(function(oDialog) {
                oDialog.open();
            });
+       },
+
+       onCloseDialog : function () {
+           // dialog kapatma
+           this.byId("helloDialog").close();
+
+
+
        }
     });
  });
