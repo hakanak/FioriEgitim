@@ -41,6 +41,12 @@
 
 
 
+  <Button
+            id="helloDialogButton1"
+            icon="sap-icon://world"
+            text="{i18n>openDialogButtonText}"
+            press=".onOpenDialog"
+            class="sapUiSmallMarginEnd"/>
 
 
 
